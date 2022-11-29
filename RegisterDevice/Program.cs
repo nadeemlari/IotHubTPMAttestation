@@ -6,7 +6,7 @@ using System.Text;
 using Microsoft.Azure.Devices.Client;
 
 Console.WriteLine("Initializing security using the local TPM...");
-using Microsoft.Azure.Devices.Shared.SecurityProviderTpm security = new SecurityProviderTpmHsm("reg-d-01");
+using SecurityProviderTpm security = new SecurityProviderTpmHsm("reg-d-01");
 
 Console.WriteLine($"Initializing the device provisioning client...");
 
